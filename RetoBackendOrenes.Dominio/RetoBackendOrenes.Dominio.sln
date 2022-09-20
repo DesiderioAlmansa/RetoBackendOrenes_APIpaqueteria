@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetoBackendOrenes.Dominio", "RetoBackendOrenes.Dominio\RetoBackendOrenes.Dominio.csproj", "{2DE71CAC-7B5F-46DA-B89D-FECC85A56067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetoBackendOrenes.Aplicacion", "RetoBackendOrenes.Aplicacion\RetoBackendOrenes.Aplicacion.csproj", "{715AD062-F249-4DC7-89E5-8DA8C7427BB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DE71CAC-7B5F-46DA-B89D-FECC85A56067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DE71CAC-7B5F-46DA-B89D-FECC85A56067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DE71CAC-7B5F-46DA-B89D-FECC85A56067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DE71CAC-7B5F-46DA-B89D-FECC85A56067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{715AD062-F249-4DC7-89E5-8DA8C7427BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{715AD062-F249-4DC7-89E5-8DA8C7427BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{715AD062-F249-4DC7-89E5-8DA8C7427BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{715AD062-F249-4DC7-89E5-8DA8C7427BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18688194-FC30-43E0-92A0-75C7E49D135C}
+	EndGlobalSection
+EndGlobal
