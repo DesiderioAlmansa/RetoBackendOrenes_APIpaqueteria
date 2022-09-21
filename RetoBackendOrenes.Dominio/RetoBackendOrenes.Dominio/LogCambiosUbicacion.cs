@@ -8,7 +8,7 @@ namespace RetoBackendOrenes.Dominio
     {
         public Guid logId { get; set; }
 
-        public Guid vehiculo { get; set; }
+        public Guid vehiculoId { get; set; }
 
         public DateTime fechaCambio { get; set; }
 

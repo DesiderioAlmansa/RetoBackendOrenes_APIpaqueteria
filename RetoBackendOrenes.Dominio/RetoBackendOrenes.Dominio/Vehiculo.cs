@@ -8,7 +8,7 @@ namespace RetoBackendOrenes.Dominio
     {
         public Guid vehiculoId { get; set; }
 
-        public Guid conductor { get; set; }
+        public Guid conductorId { get; set; }
 
         public int pedidosPendientes { get; set; }
 
@@ -16,7 +16,7 @@ namespace RetoBackendOrenes.Dominio
 
         public Conductor Conductor { get; set; }
 
-        public List<Pedido> Pedidos { get; set; }
+        public List<Pedido> Pedidos { get; set; } 
 
         public List<LogCambiosUbicacion> Logs_CambiosUbicacion { get; set; }
 

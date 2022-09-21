@@ -20,27 +20,40 @@ namespace RetoBackendOrenes.Aplicacion.Servicios
 
         public Cliente Agregar(Cliente entidad)
         {
-            throw new NotImplementedException();
+            if (entidad == null)
+                throw new ArgumentNullException("El 'Cliente' es requerido.");
+
+
+            var resultadoCliente = this._repoCliente.Agregar(entidad);
+
+            this._repoCliente.GuardarTodosLosCambios();
+            return resultadoCliente;
+
         }
 
         public void Editar(Cliente entidad)
         {
-            throw new NotImplementedException();
+            if (entidad == null)
+                throw new ArgumentNullException("El 'Cliente' es requerido.");
+
+            this._repoCliente.Editar(entidad);
+            this._repoCliente.GuardarTodosLosCambios();
         }
 
         public void Eliminar(Guid entidadID)
         {
-            throw new NotImplementedException();
+            this._repoCliente.Eliminar(entidadID);
+            this._repoCliente.GuardarTodosLosCambios();
         }
 
         public List<Cliente> Listar()
         {
-            throw new NotImplementedException();
+            return this._repoCliente.Listar();
         }
 
         public Cliente SeleccionarPorID(Guid entidadID)
         {
-            throw new NotImplementedException();
+            return this._repoCliente.SeleccionarPorID(entidadID);
         }
     }
 }

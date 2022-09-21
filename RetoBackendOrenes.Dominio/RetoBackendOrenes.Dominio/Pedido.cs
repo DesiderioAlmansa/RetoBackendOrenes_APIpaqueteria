@@ -8,7 +8,7 @@ namespace RetoBackendOrenes.Dominio
     {
         public Guid numeroPedido { get; set; }
 
-        public Guid cliente { get; set; }
+        public Guid clienteId { get; set; }
 
         public string direccionEnvio { get; set; }
 
@@ -16,7 +16,7 @@ namespace RetoBackendOrenes.Dominio
 
         public decimal importeTotal { get; set; }
 
-        public Guid vehiculo { get; set; }
+        public Guid vehiculoId { get; set; }
 
         public DateTime fechaCreacion { get; set; }
 
