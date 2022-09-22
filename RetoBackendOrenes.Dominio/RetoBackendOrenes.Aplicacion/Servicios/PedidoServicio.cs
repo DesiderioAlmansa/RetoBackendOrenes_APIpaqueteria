@@ -8,7 +8,7 @@ using RetoBackendOrenes.Aplicacion.Interfaces;
 
 namespace RetoBackendOrenes.Aplicacion.Servicios
 {
-    class PedidoServicio : IServicioBase<Pedido, Guid>
+    public class PedidoServicio : IServicioBase<Pedido, Guid>
     {
 
         private readonly IRepositorioBase<Pedido, Guid> _repoPedido;

@@ -8,7 +8,7 @@ using RetoBackendOrenes.Aplicacion.Interfaces;
 
 namespace RetoBackendOrenes.Aplicacion.Servicios
 {
-    class LogCambiosUbicacionServicio : IServicioBase<LogCambiosUbicacion, Guid>
+    public class LogCambiosUbicacionServicio : IServicioBase<LogCambiosUbicacion, Guid>
     {
         private readonly IRepositorioBase<Vehiculo, Guid> _repoVehiculo;
         private readonly IRepositorioBase<LogCambiosUbicacion, Guid> _repoLogCambiosUbicacion;

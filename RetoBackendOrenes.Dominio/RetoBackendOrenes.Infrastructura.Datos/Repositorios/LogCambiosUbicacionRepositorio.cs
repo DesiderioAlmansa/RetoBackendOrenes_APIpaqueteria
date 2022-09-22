@@ -9,11 +9,11 @@ using RetoBackendOrenes.Infrastructura.Datos.Context;
 
 namespace RetoBackendOrenes.Infrastructura.Datos.Repositorios
 {
-    public class LogCambiosUbicaionRepositorio : IRepositorioBase<LogCambiosUbicacion, Guid>
+    public class LogCambiosUbicacionRepositorio : IRepositorioBase<LogCambiosUbicacion, Guid>
     {
         private RetoContext _db;
 
-        public LogCambiosUbicaionRepositorio(RetoContext db)
+        public LogCambiosUbicacionRepositorio(RetoContext db)
         {
             this._db = db;
         }

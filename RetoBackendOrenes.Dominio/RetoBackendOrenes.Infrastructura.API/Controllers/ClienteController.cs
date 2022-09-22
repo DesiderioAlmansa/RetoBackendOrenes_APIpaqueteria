@@ -14,7 +14,7 @@ using RetoBackendOrenes.Infrastructura.Datos.Repositorios;
 
 namespace RetoBackendOrenes.Infrastructura.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/cliente")]
     [ApiController]
     public class ClienteController : ControllerBase
     {
@@ -27,7 +27,8 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return servicioCliente;
         }
 
-        // GET: api/<ClienteController>
+        // GET: api/cliente/getall
+        [Route("getall")]
         [HttpGet]
         public ActionResult<List<Cliente>> Get()
         {
