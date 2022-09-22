@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "RetoBackendOrenes.Aplicacion/1.0.0": {
+        "dependencies": {
+          "RetoBackendOrenes.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "RetoBackendOrenes.Aplicacion.dll": {}
+        }
+      },
+      "RetoBackendOrenes.Dominio/1.0.0": {
+        "runtime": {
+          "RetoBackendOrenes.Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RetoBackendOrenes.Aplicacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RetoBackendOrenes.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

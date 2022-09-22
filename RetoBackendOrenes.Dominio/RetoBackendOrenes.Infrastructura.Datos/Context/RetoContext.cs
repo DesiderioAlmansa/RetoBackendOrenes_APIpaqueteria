@@ -18,7 +18,7 @@ namespace RetoBackendOrenes.Infrastructura.Datos.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer("");
+            options.UseSqlServer("Server=localhost;Initial Catalog=retoBackendOrenes;Integrated Security = True;");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)

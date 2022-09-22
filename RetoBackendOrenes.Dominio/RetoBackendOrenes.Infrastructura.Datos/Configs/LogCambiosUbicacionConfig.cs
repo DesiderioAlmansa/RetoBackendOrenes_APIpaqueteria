@@ -12,9 +12,12 @@ namespace RetoBackendOrenes.Infrastructura.Datos.Configs
     {
         public void Configure(EntityTypeBuilder<LogCambiosUbicacion> builder)
         {
-            builder.ToTable("tblConductor");
+            builder.ToTable("tblLogCambiosUbicacion");
             builder.HasKey(l => l.logId);
-            builder.HasOne(vehiculo => vehiculo.Vehiculo)
+
+            //builder
+            //    .HasOne(vehiculo => vehiculo.Vehiculo)
+            //    .WithMany(l => l.Logs_CambiosUbicacion);
  
         }
     }

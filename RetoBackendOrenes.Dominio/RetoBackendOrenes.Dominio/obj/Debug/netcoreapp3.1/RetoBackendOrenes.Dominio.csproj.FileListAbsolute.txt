@@ -1,0 +1,10 @@
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Dominio\bin\Debug\netcoreapp3.1\RetoBackendOrenes.Dominio.deps.json
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Dominio\bin\Debug\netcoreapp3.1\RetoBackendOrenes.Dominio.dll
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Dominio\bin\Debug\netcoreapp3.1\RetoBackendOrenes.Dominio.pdb
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Dominio\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Dominio.csproj.AssemblyReference.cache
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Dominio\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Dominio\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Dominio.AssemblyInfoInputs.cache
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Dominio\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Dominio.AssemblyInfo.cs
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Dominio\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Dominio\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Dominio.dll
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Dominio\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Dominio.pdb

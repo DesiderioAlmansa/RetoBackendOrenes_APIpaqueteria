@@ -14,7 +14,7 @@ namespace RetoBackendOrenes.Dominio
 
         public string carnetCirculacion { get; set; }
 
-        public Vehiculo vehiculo { get; set; }
+        public Vehiculo Vehiculo { get; set; }
 
     }
 }

@@ -1,0 +1,13 @@
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Aplicacion\bin\Debug\netcoreapp3.1\RetoBackendOrenes.Aplicacion.deps.json
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Aplicacion\bin\Debug\netcoreapp3.1\RetoBackendOrenes.Aplicacion.dll
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Aplicacion\bin\Debug\netcoreapp3.1\RetoBackendOrenes.Aplicacion.pdb
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Aplicacion\bin\Debug\netcoreapp3.1\RetoBackendOrenes.Dominio.dll
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Aplicacion\bin\Debug\netcoreapp3.1\RetoBackendOrenes.Dominio.pdb
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Aplicacion\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Aplicacion.csproj.AssemblyReference.cache
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Aplicacion\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Aplicacion\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Aplicacion.AssemblyInfoInputs.cache
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Aplicacion\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Aplicacion.AssemblyInfo.cs
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Aplicacion\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Aplicacion\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Aplicacion.csproj.CopyComplete
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Aplicacion\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Aplicacion.dll
+C:\Users\Desiderio\OneDrive\Documentos\GitHub\RetoBackendOrenes_APIpaqueteria\RetoBackendOrenes.Dominio\RetoBackendOrenes.Aplicacion\obj\Debug\netcoreapp3.1\RetoBackendOrenes.Aplicacion.pdb

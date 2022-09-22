@@ -12,16 +12,13 @@ namespace RetoBackendOrenes.Aplicacion.Servicios
     {
         private readonly IRepositorioBase<Vehiculo, Guid> _repoVehiculo;
         private readonly IRepositorioBase<Conductor, Guid> _repoConductor;
-        //private readonly IRepositorioBase<Pedido, Guid> _repoPedido;
-        //private readonly IRepositorioBase<LogCambiosUbicacion, Guid> _repoLogCambiosUbicacion;
+      
 
-        public VehiculoServicio(IRepositorioBase<Vehiculo, Guid> repoVehiculo, IRepositorioBase<Conductor, Guid> repoConductor/*IRepositorioBase<Pedido, Guid> repoPedido, 
-            IRepositorioBase<LogCambiosUbicacion, Guid> repoLogCambiosUbicacion*/)
+        public VehiculoServicio(IRepositorioBase<Vehiculo, Guid> repoVehiculo, IRepositorioBase<Conductor, Guid> repoConductor)
         {
             this._repoVehiculo = repoVehiculo;
             this._repoConductor = repoConductor;
-            //this._repoPedido = repoPedido;
-            //this._repoLogCambiosUbicacion = repoLogCambiosUbicacion;
+
         }
 
         public Vehiculo Agregar(Vehiculo entidad)

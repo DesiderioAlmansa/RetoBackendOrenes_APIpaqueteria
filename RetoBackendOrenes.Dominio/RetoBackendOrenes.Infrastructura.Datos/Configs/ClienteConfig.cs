@@ -14,6 +14,12 @@ namespace RetoBackendOrenes.Infrastructura.Datos.Configs
         {
             builder.ToTable("tblCliente");
             builder.HasKey(c => c.clienteId);
+
+            builder
+                .HasMany(p => p.Pedidos)
+                .WithOne(c => c.Cliente); 
+                
+                 
         }
     }
 }

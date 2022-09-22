@@ -14,6 +14,11 @@ namespace RetoBackendOrenes.Infrastructura.Datos.Configs
         {
             builder.ToTable("tblConductor");
             builder.HasKey(c => c.conductorId);
+
+            builder
+                .HasOne(p => p.Vehiculo)
+                .WithOne(c => c.Conductor);
+                 
         }
     }
 }
