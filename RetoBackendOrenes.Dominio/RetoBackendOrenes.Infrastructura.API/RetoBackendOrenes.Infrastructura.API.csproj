@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RetoBackendOrenes.Aplicacion\RetoBackendOrenes.Aplicacion.csproj" />
     <ProjectReference Include="..\RetoBackendOrenes.Dominio\RetoBackendOrenes.Dominio.csproj" />
     <ProjectReference Include="..\RetoBackendOrenes.Infrastructura.Datos\RetoBackendOrenes.Infrastructura.Datos.csproj" />
