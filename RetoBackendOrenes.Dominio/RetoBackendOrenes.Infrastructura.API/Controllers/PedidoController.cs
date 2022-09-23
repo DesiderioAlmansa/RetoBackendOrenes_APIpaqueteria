@@ -27,6 +27,16 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
 
             return servicioPedido;
         }
+        VehiculoServicio CrearServicioVehiculo()
+        {
+            RetoContext db = new RetoContext();
+
+            VehiculoRepositorio repoVehiculos = new VehiculoRepositorio(db);
+            ConductorRepositorio repoPedidos = new ConductorRepositorio(db);
+            VehiculoServicio servicioVehiculo = new VehiculoServicio(repoVehiculos, repoPedidos);
+
+            return servicioVehiculo;
+        }
 
         // GET: api/pedido/getall
         [Route("getall")]
@@ -37,7 +47,7 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok(servicio.Listar());
         }
 
-        // GET api/<PedidoController>/5
+        // GET api/pedido/5
         [HttpGet("{id}")]
         public ActionResult<Pedido> Get(Guid id)
         {
@@ -45,8 +55,18 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok(servicio.SeleccionarPorID(id));
         }
 
+        // GET api/pedido/5
+        [HttpGet("obtenerVehiculo/{numPedido}")]
+        public ActionResult<Vehiculo> GetVehiculo(Guid numPedido)
+        {
+            var servicioPedido = CrearServicioPedido();
+            var pedido = servicioPedido.SeleccionarPorID(numPedido);
+
+            var servicioVehiculo = CrearServicioVehiculo();
+            return Ok(servicioVehiculo.SeleccionarPorID(pedido.vehiculoId));
+        }
+
         // POST api/pedido/
-        [Route("agregar")]
         [HttpPost]
         public ActionResult Post([FromBody] Pedido nuevoPedido)
         {
@@ -55,7 +75,7 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok("Se ha insertado el Pedido satisfactoriamente.");
         }
 
-        // PUT api/<PedidoController>/5
+        // PUT api/pedido/5
         [HttpPut("{id}")]
         public ActionResult Put(Guid id, [FromBody] Pedido editPedido)
         {
@@ -65,7 +85,23 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok("Se ha editado el Pedido satisfactoriamente.");
         }
 
-        // DELETE api/<PedidoController>/5
+      
+        // PUT api/pedido/asignarVehiculo/{numPedido}/{idVehiculo}
+        [HttpPut("asignarVehiculo/{numPedido}/{idVehiculo}")]
+        public ActionResult Put(Guid numPedido, Guid idVehiculo)
+        {
+            var servicio = CrearServicioPedido();
+            var pedidoSeleccionado = servicio.SeleccionarPorID(numPedido);
+
+            var editPedido = new Pedido();
+            editPedido.numeroPedido = pedidoSeleccionado.numeroPedido;
+            editPedido.vehiculoId = idVehiculo;
+
+            servicio.Editar(editPedido);
+            return Ok("Se ha asignado el Vehiculo al Pedido satisfactoriamente.");
+        }
+
+        // DELETE api/pedido/5
         [HttpDelete("{id}")]
         public ActionResult Delete(Guid id)
         {

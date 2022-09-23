@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetoBackendOrenes.Dominio",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetoBackendOrenes.Aplicacion", "RetoBackendOrenes.Aplicacion\RetoBackendOrenes.Aplicacion.csproj", "{715AD062-F249-4DC7-89E5-8DA8C7427BB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetoBackendOrenes.Infrastructura.Datos", "RetoBackendOrenes.Infrastructura.Datos\RetoBackendOrenes.Infrastructura.Datos.csproj", "{1830476A-FBFC-45DF-B689-BE5D5E3E2204}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetoBackendOrenes.Infrastructura.Datos", "RetoBackendOrenes.Infrastructura.Datos\RetoBackendOrenes.Infrastructura.Datos.csproj", "{1830476A-FBFC-45DF-B689-BE5D5E3E2204}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetoBackendOrenes.Infrastructura.API", "RetoBackendOrenes.Infrastructura.API\RetoBackendOrenes.Infrastructura.API.csproj", "{DAE8956D-856D-4C6A-A749-C1E3D7E729C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetoBackendOrenes.Infrastructura.API", "RetoBackendOrenes.Infrastructura.API\RetoBackendOrenes.Infrastructura.API.csproj", "{DAE8956D-856D-4C6A-A749-C1E3D7E729C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetoBackendOrenes.WinformsPrueba", "RetoBackendOrenes.WinformsPrueba\RetoBackendOrenes.WinformsPrueba.csproj", "{B0B4C26B-5BE9-485B-82D5-20C2CB7AD553}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DAE8956D-856D-4C6A-A749-C1E3D7E729C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAE8956D-856D-4C6A-A749-C1E3D7E729C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAE8956D-856D-4C6A-A749-C1E3D7E729C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B4C26B-5BE9-485B-82D5-20C2CB7AD553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B4C26B-5BE9-485B-82D5-20C2CB7AD553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B4C26B-5BE9-485B-82D5-20C2CB7AD553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B4C26B-5BE9-485B-82D5-20C2CB7AD553}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

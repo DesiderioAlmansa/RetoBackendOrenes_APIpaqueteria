@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DiSpMb20WA+32SgYnL3VkEcsD75c2A5lRuvq35r7WDh/lUZkl/nysTrQE2UGWsBDZXC8e8HQgAom24mfFE0UWA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Desiderio\\OneDrive\\Documentos\\GitHub\\RetoBackendOrenes_APIpaqueteria\\RetoBackendOrenes.Dominio\\RetoBackendOrenes.WinformsPrueba\\RetoBackendOrenes.WinformsPrueba.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Desiderio\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -30,8 +30,21 @@ namespace RetoBackendOrenes.Infrastructura.Datos.Repositorios
             var pedidoSeleccionado = this._db.Pedido.Where(c => c.numeroPedido == entidad.numeroPedido).FirstOrDefault();
             if (pedidoSeleccionado != null)
             {
-                pedidoSeleccionado.direccionEnvio = entidad.direccionEnvio;
-                pedidoSeleccionado.entregado = entidad.entregado;
+                if(entidad.direccionEnvio != null) pedidoSeleccionado.direccionEnvio = entidad.direccionEnvio;
+                if(entidad.entregado != null) pedidoSeleccionado.entregado = entidad.entregado;
+
+                if(!pedidoSeleccionado.vehiculoId.Equals(entidad.vehiculoId)){
+
+                    var vehiculo = this._db.Vehiculo.Where(v => v.vehiculoId == entidad.vehiculoId).FirstOrDefault();
+                    if(vehiculo!= null)
+                    {
+                        pedidoSeleccionado.vehiculoId = entidad.vehiculoId;
+                    }
+                    else
+                    {
+                        throw new NullReferenceException("Se pretende asignar un Vehiculo que no existe.");
+                    }
+                }
 
                 this._db.Entry(pedidoSeleccionado).State = Microsoft.EntityFrameworkCore.EntityState.Modified;//enmarca el estado de la entidad en modificado
             }

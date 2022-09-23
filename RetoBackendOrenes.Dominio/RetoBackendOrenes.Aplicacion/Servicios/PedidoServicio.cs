@@ -28,6 +28,7 @@ namespace RetoBackendOrenes.Aplicacion.Servicios
             if (entidad == null)
                 throw new ArgumentNullException("El 'Pedido' es requerido.");
 
+            entidad.fechaCreacion = DateTime.Now;
 
             var resultadoPedido = this._repoPedido.Agregar(entidad);
 
@@ -35,7 +36,7 @@ namespace RetoBackendOrenes.Aplicacion.Servicios
             if (cliente == null)
                 throw new NullReferenceException("El cliente no existe en la base de datos.");
 
-            var vehiculo = this._repoVehiculo.SeleccionarPorID(entidad.Vehiculo.vehiculoId);
+            var vehiculo = this._repoVehiculo.SeleccionarPorID(entidad.vehiculoId);
             if (vehiculo == null)
                 throw new NullReferenceException("El vehiculo no existe en la base de datos.");
 

@@ -21,6 +21,13 @@ namespace RetoBackendOrenes.Infrastructura.Datos.Repositorios
         public Vehiculo Agregar(Vehiculo entidad)
         {
             entidad.vehiculoId = Guid.NewGuid();
+
+            var conductor = this._db.Conductor.FirstOrDefault(c => c.conductorId == entidad.conductorId);
+            if(conductor != null)
+            {
+                throw new NullReferenceException(" El conductor no existe.");
+            }
+
             this._db.Vehiculo.Add(entidad);
             return entidad;
         }
@@ -30,6 +37,18 @@ namespace RetoBackendOrenes.Infrastructura.Datos.Repositorios
             var vehiculoSeleccionado = this._db.Vehiculo.Where(c => c.vehiculoId == entidad.vehiculoId).FirstOrDefault();
             if (vehiculoSeleccionado != null)
             {
+                //Si la ubicación ha cambiado, se crea un registro en LogCambiosUbicacion
+                if(!entidad.ubicacionActual.Equals(vehiculoSeleccionado.ubicacionActual))
+                {
+                    LogCambiosUbicacion nuevoLog = new LogCambiosUbicacion();
+                    nuevoLog.vehiculoId = vehiculoSeleccionado.vehiculoId;
+                    nuevoLog.fechaCambio = DateTime.Now;
+                    nuevoLog.ubicacionAnterior = vehiculoSeleccionado.ubicacionActual;
+                    nuevoLog.ubicacionNueva = entidad.ubicacionActual;
+
+                    this._db.LogCambiosUbicacion.Add(nuevoLog);
+                }
+
                 vehiculoSeleccionado.pedidosPendientes = entidad.pedidosPendientes;
                 vehiculoSeleccionado.ubicacionActual = entidad.ubicacionActual;
 

@@ -37,7 +37,7 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok(servicio.Listar());
         }
 
-        // GET api/<VehiculoController>/5
+        // GET api/vehiculo/5
         [HttpGet("{id}")]
         public ActionResult<Vehiculo> Get(Guid id)
         {
@@ -46,34 +46,48 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
         }
 
 
-        // POST api/<VehiculoController>
-        [Route("agregar")]
+        // POST api/vehiculo
         [HttpPost]
         public ActionResult Post([FromBody] Vehiculo nuevoVehiculo)
         {
-
             var servicio = CrearServicioVehiculo();
             servicio.Agregar(nuevoVehiculo);
-            return Ok("Se ha insertado el Cliente satisfactoriamente.");
+            return Ok("Se ha insertado el Vehiculo satisfactoriamente.");
         }
 
-        // PUT api/<VehiculoController>/5
+        // PUT api/vehiculo/5
         [HttpPut("{id}")]
         public ActionResult Put(Guid id, [FromBody] Vehiculo editVehiculo)
         {
             var servicio = CrearServicioVehiculo();
             editVehiculo.vehiculoId = id;
             servicio.Editar(editVehiculo);
-            return Ok("Se ha editado el Cliente satisfactoriamente.");
+            return Ok("Se ha editado el Vehiculo satisfactoriamente.");
         }
 
-        // DELETE api/<VehiculoController>/5
+        // PUT api/vehiculo/cambiaubicacion/{id}/{nuevaUbicacion}
+        [HttpPut("cambiaubicacion/{id}/{nuevaUbicacion}")]
+        public ActionResult Put(Guid id, String nuevaUbicacion)
+        {
+            var servicio = CrearServicioVehiculo();
+            Vehiculo vehiculoSeleccionado = servicio.SeleccionarPorID(id);
+            
+            var editVehiculo = new Vehiculo();
+            editVehiculo.vehiculoId = vehiculoSeleccionado.vehiculoId;
+            editVehiculo.ubicacionActual = nuevaUbicacion;
+            
+ 
+            servicio.Editar(editVehiculo);
+            return Ok("Se ha actualizado la ubicación del vehiculo correctamente.");
+        }
+
+        // DELETE api/vehiculo/5
         [HttpDelete("{id}")]
         public ActionResult Delete(Guid id)
         {
             var servicio = CrearServicioVehiculo();
             servicio.Eliminar(id);
-            return Ok("Se ha eliminado el Cliente satisfactoriamente.");
+            return Ok("Se ha eliminado el Vehiculo satisfactoriamente.");
         }
     }
 }
