@@ -36,7 +36,7 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok(servicio.Listar());
         }
 
-        // GET api/<LogCambiosUbicacionesController>/5
+        // GET api/logcambiosubicacion/5
         [HttpGet("{id}")]
         public ActionResult<LogCambiosUbicacion> Get(Guid id)
         {
@@ -44,7 +44,7 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok(servicio.SeleccionarPorID(id));
         }
 
-        // POST api/<LogCambiosUbicacionesController>
+        // POST api/logcambiosubicacion
         [HttpPost]
         public ActionResult Post([FromBody] LogCambiosUbicacion nuevoLog)
         {
@@ -53,17 +53,17 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok("Se ha insertado el Log satisfactoriamente.");
         }
 
-        // PUT api/<LogCambiosUbicacionesController>/5
-        [HttpPut("{id}")]
-        public ActionResult Put(Guid id, [FromBody] LogCambiosUbicacion editLog)
-        {
-            var servicio = CrearServicioLogCambiosUbicacion();
-            editLog.logId = id;
-            servicio.Editar(editLog);
-            return Ok("Se ha editado el Log satisfactoriamente.");
-        }
+        //// PUT api/logcambiosubicacion/5
+        //[HttpPut("{id}")]
+        //public ActionResult Put(Guid id, [FromBody] LogCambiosUbicacion editLog)
+        //{
+        //    var servicio = CrearServicioLogCambiosUbicacion();
+        //    editLog.logId = id;
+        //    servicio.Editar(editLog);
+        //    return Ok("Se ha editado el Log satisfactoriamente.");
+        //}
 
-        // DELETE api/<LogCambiosUbicacionesController>/5
+        // DELETE api/logcambiosubicacion/5
         [HttpDelete("{id}")]
         public ActionResult Delete(Guid id)
         {

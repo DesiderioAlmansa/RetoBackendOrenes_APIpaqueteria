@@ -48,14 +48,14 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
         }
 
         // GET api/pedido/5
-        [HttpGet("{id}")]
-        public ActionResult<Pedido> Get(Guid id)
+        [HttpGet("{numPedido}")]
+        public ActionResult<Pedido> Get(Guid numPedido)
         {
             var servicio = CrearServicioPedido();
-            return Ok(servicio.SeleccionarPorID(id));
+            return Ok(servicio.SeleccionarPorID(numPedido));
         }
 
-        // GET api/pedido/5
+        // GET api/pedido/obtenerVehiculo/5
         [HttpGet("obtenerVehiculo/{numPedido}")]
         public ActionResult<Vehiculo> GetVehiculo(Guid numPedido)
         {
@@ -76,11 +76,11 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
         }
 
         // PUT api/pedido/5
-        [HttpPut("{id}")]
-        public ActionResult Put(Guid id, [FromBody] Pedido editPedido)
+        [HttpPut("{numPedido}")]
+        public ActionResult Put(Guid numPedido, [FromBody] Pedido editPedido)
         {
             var servicio = CrearServicioPedido();
-            editPedido.clienteId = id;
+            editPedido.clienteId = numPedido;
             servicio.Editar(editPedido);
             return Ok("Se ha editado el Pedido satisfactoriamente.");
         }

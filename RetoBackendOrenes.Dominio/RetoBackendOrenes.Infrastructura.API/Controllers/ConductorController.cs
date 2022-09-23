@@ -35,7 +35,7 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok(servicio.Listar());
         }
 
-        // GET api/<ConductorController>/5
+        // GET api/conductor/5
         [HttpGet("{id}")]
         public ActionResult Get(Guid id)
         {
@@ -43,7 +43,7 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok(servicio.SeleccionarPorID(id));
         }
 
-        // POST api/<ConductorController>
+        // POST api/conductor
         [HttpPost]
         public ActionResult Post([FromBody] Conductor nuevoConductor)
         {
@@ -52,7 +52,7 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok("Se ha insertado el Conductor satisfactoriamente.");
         }
 
-        // PUT api/<ConductorController>/5
+        // PUT api/conductor/5
         [HttpPut("{id}")]
         public ActionResult Put(Guid id, [FromBody] Conductor editConductor)
         {
@@ -62,7 +62,7 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok("Se ha editado el Conductor satisfactoriamente.");
         }
 
-        // DELETE api/<ConductorController>/5
+        // DELETE api/conductor/5
         [HttpDelete("{id}")]
         public ActionResult Delete(Guid id)
         {

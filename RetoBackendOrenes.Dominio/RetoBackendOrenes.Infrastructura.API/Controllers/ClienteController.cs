@@ -36,7 +36,7 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok(servicio.Listar());
         }
 
-        // GET api/<ClienteController>/5
+        // GET api/cliente/5
         [HttpGet("{id}")]
         public ActionResult<Cliente> Get(Guid id)
         {
@@ -44,7 +44,7 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok(servicio.SeleccionarPorID(id));
         }
 
-        // POST api/<ClienteController>
+        // POST api/cliente
         [HttpPost]
         public ActionResult Post([FromBody] Cliente nuevoCliente)
         {
@@ -53,7 +53,7 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok("Se ha insertado el Cliente satisfactoriamente.");
         }
 
-        // PUT api/<ClienteController>/5
+        // PUT api/cliente/5
         [HttpPut("{id}")]
         public ActionResult Put(Guid id, [FromBody] Cliente editCliente)
         {
@@ -63,7 +63,7 @@ namespace RetoBackendOrenes.Infrastructura.API.Controllers
             return Ok("Se ha editado el Cliente satisfactoriamente.");
         }
 
-        // DELETE api/<ClienteController>/5
+        // DELETE api/cliente/5
         [HttpDelete("{id}")]
         public ActionResult Delete(Guid id)
         {
